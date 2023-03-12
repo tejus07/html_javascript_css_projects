@@ -1,0 +1,375 @@
+@font-face {
+    font-family: 'Whitney';
+    src: url('https://constant.myntassets.com/www/fonts/WhitneyHTF-Book.eot');
+    src: url('https://constant.myntassets.com/www/fonts/WhitneyHTF-Book.eot?#iefix') format('embedded-opentype'),
+    url('https://constant.myntassets.com/www/fonts/WhitneyHTF-Book.woff') format('woff'),
+    url('https://constant.myntassets.com/www/fonts/WhitneyHTF-Book.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whitney';
+    src: url('https://constant.myntassets.com/www/fonts/WhitneyHTF-SemiBold.eot');
+    src: url('https://constant.myntassets.com/www/fonts/WhitneyHTF-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('https://constant.myntassets.com/www/fonts/WhitneyHTF-SemiBold.woff') format('woff'),
+    url('https://constant.myntassets.com/www/fonts/WhitneyHTF-SemiBold.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Whitney, sans-serif;
+}
+
+.col-25 {
+    width: 25%;
+    position: relative;
+}
+.col-20{
+    width: 25%;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.inner-container {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    margin-top: 40px;
+}
+
+#task {
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    padding: 10px 20px 25px 30px;
+    /*box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;*/
+    font-size: 17px;
+    box-shadow: rgb(9 9 9 / 22%) 0px 0px 5px 0.3px;
+
+}
+.filter {
+    width: 80%;
+    margin: 40px 0 0 0;
+}
+.filter-inner{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-around;
+    /*box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;*/
+    font-size: 17px;
+    box-shadow: rgb(9 9 9 / 22%) 0px 0px 5px 0.3px;
+    height: auto;
+}
+.filter-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.filter-inner-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 55px;
+}
+.filter-btn, .filter-clear-btn{
+    width: 47%;
+    height: 42px;
+}
+.filter-btn{
+    background: #2196F3;
+    transition: opacity 1s;
+    border-radius: 4px;
+    color: white;
+    border: 1px solid #ccc!important;
+    padding: 8px;
+    font-size: 15px;
+}
+.filter-clear-btn{
+    font-size: 15px;
+    border: 1px solid #ccc!important;
+    background: #f44336;
+    border-radius: 4px;
+    transition: opacity 1s;
+    color: white;
+}
+
+form h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Whitney !important;
+}
+
+.form-inner-1, .form-inner-2 {
+    display: flex;
+    width: 100%;
+    padding-top: 12px;
+    position: relative;
+}
+input#dob {
+    cursor: text;
+}
+input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+input::-webkit-calendar-picker-indicator:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+.form-inner-1 label {
+    display: flex;
+    flex-flow: column;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.form-inner-1 input {
+    width: 90%;
+    padding: 0px 10px;
+    line-height: 40px;
+    margin-top: 10px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    border: 0px;
+    outline: 0;
+    background-color: #eaecf0;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.heading {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.subject-checkbox-inner-1, .subject-checkbox-inner-2 {
+    display: flex;
+    flex-flow: column;
+}
+.subject-checkbox-inner label,.gender-radio-inner label{
+    cursor: pointer;
+}
+.gender-radio-inner {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.gender-radio-inner-1, gender-radio-inner-2 {
+    display: flex;
+    flex-flow: column;
+}
+
+.subject-checkbox-inner {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.subject-checkbox {
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 20px;
+}
+
+.sub-gender {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+}
+
+.gender-radio {
+    display: flex;
+    flex-flow: column;
+
+}
+
+table {
+    border: 1px solid;
+    min-width: 80%;
+    margin-top: 40px;
+    display: none;
+    font-size: 20px;
+}
+
+table td:nth-child(1) {
+    width: 50px;
+    max-width: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table td:nth-child(2) {
+    width: 200px;
+    max-width: 250px;
+    white-space: normal;
+    vertical-align: middle;
+    text-transform: capitalize;
+}
+
+table td:nth-child(3) {
+    width: 150px;
+    max-width: 155px;
+    vertical-align: middle;
+}
+
+table td:nth-child(4) {
+    width: 100px;
+    max-width: 100px;
+    vertical-align: middle;
+}
+
+table td:nth-child(5) {
+    width: 250px;
+    max-width: 250px;
+    vertical-align: middle;
+    white-space: normal;
+
+}
+
+table td:nth-child(6) {
+    width: 200px;
+    max-width: 300px;
+    vertical-align: middle;
+
+}
+
+table td:nth-child(7) {
+    width: 90px;
+    max-width: 90px;
+    vertical-align: middle;
+}
+
+td {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+td.btn-cell {
+    width: 100px;
+    vertical-align: middle !important;
+}
+
+.btn-cell button {
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+}
+
+button#apply-btn {
+    width: 90%;
+    font-weight: 900;
+    align-self: center;
+    height: 42px;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+.button-3 {
+    appearance: none;
+    margin-top: 42px;
+    background-color: #2ea44f;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 2px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.button-3:hover {
+    background-color: #2c974b;
+}
+
+.button-3:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+}
+
+.btn-edit {
+    background: #2196F3;
+    transition: opacity 1s;
+    border-radius: 4px;
+    color: white;
+}
+
+.btn-remove {
+    background: #f44336;
+    border-radius: 4px;
+    transition: opacity 1s;
+    color: white;
+    font-size: 10px;
+}
+
+
+.btn-update {
+    display: none;
+    width: 90%;
+    font-weight: 900;
+    align-self: center;
+    height: 42px;
+}
+
+.container h4 {
+    opacity: 0.5;
+    text-transform: capitalize;
+}
+
+.valid {
+    font-size: 12.5px;
+    color: red;
+    position: absolute;
+    bottom: 0;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.options-inner {
+    display: flex;
+    flex-flow: wrap;
+}
+.options-inner label{
+    margin-right: 3%;
+}
